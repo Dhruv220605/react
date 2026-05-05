@@ -1,0 +1,12 @@
+.card{
+  background-color: rgb(90, 0, 0);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.Nav{
+  background-color: rgb(29, 0, 175);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
