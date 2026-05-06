@@ -8,8 +8,8 @@ const RightCardContent = (props) => {
             <div>
                 <p className='text-white leading-normal '>lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
                 <div className='flex items-center justify-between mt-5'>
-                    <button className='bg-blue-600 text-white font-bold py-3 px-7 rounded-full'>{props.intro}</button>
-                    <button className='bg-blue-600 text-white font-bold py-3 px-3 rounded-full '><ArrowRight /></button>
+                    <button style={{ backgroundColor: props.color }} className='text-white font-bold py-3 px-7 rounded-full'>{props.intro}</button>
+                    <button style={{ backgroundColor: props.color }} className='text-white font-bold py-3 px-3 rounded-full '><ArrowRight /></button>
                 </div>
             </div>
     </div>
