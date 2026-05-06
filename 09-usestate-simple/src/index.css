@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.btn{
+  padding: 50 px;
+  height: 100px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+}
+.btn:hover{
+  background-color: rgb(133, 133, 133);
+  color: white;
+}
+
+.h1{
+  font-size: 50px;
+  width:fit -content;
+  color: black;
+  background-color: rgb(133, 133, 133);
+  padding: 10px 70px;
+  border-radius: 5px;
+  margin: 20px;
+}
