@@ -30,7 +30,7 @@ const App = () => {
   }
 
   return (
-    <div className='h-screen lg:flex bg-black text-white'>
+    <div className='h-screen lg:flex bg-white text-black'>
 
       <form onSubmit={(e) => {
         submitHandler(e)
@@ -41,7 +41,7 @@ const App = () => {
         <input
           type="text"
           placeholder='Enter Notes Heading'
-          className='px-5 bg-olive-700 w-full font-medium py-2 border-2 outline-none rounded '
+          className='px-5 bg-amber-200 w-full font-medium py-2 border-2 outline-none rounded '
           value={title}
           onChange={(e) => {
             setTitle(e.target.value)
@@ -50,7 +50,7 @@ const App = () => {
 
         <textarea
           type="text"
-          className='px-5 w-full bg-olive-700 font-medium h-32 py-2 flex items-start flex-row border-2 outline-none  rounded '
+          className='px-5 w-full bg-amber-200 text-black font-medium h-32 py-2 flex items-start flex-row border-2 outline-none  rounded '
           placeholder='Write Details here'
           value={details}
           onChange={(e) => {
@@ -59,7 +59,7 @@ const App = () => {
         />
 
         <button
-          className='bg-white active:scale-95 font-medium w-full outline-none  text-black px-5 py-2 rounded'
+          className='bg-amber-900 active:scale-95 font-medium w-full outline-none  text-white px-5 py-2 rounded'
         >
           Add Note
         </button>
@@ -70,10 +70,10 @@ const App = () => {
         <div className='flex flex-wrap items-start justify-start gap-5 mt-6 h-[90%] overflow-auto'>
           {task.map(function (elem, idx) {
 
-            return <div key={idx} className=" flex justify-between flex-col items-start relative h-52 w-40 bg-cover rounded-xl text-black pt-9 pb-4 px-4 bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')]">
+            return <div key={idx} className=" flex justify-between flex-col items-start relative h-52 w-40 bg-cover rounded-xl text-white pt-9 pb-4 px-4 bg-[url('https://i.pinimg.com/736x/f0/54/4c/f0544c7e3b5430a55876755ffd2e3230.jpg')]">
               <div>
                 <h3 className='leading-tight text-lg font-bold'>{elem.title}</h3>
-                <p className='mt-2 leading-tight text-xs font-semibold text-gray-600'>{elem.details}</p>
+                <p className='mt-2 leading-tight text-xs font-semibold text-white opacity-85'>{elem.details}</p>
               </div>
               <button onClick={() => {
                 deleteNote(idx)

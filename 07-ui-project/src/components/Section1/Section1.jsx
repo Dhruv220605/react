@@ -4,7 +4,7 @@ import Page1Content from './Page1Content'
 
 const Section1 = (props) => {
   return (
-    <div className='w-full h-screen bg-[#ffffff] text-white '>
+    <div className='w-full h-screen bg-[#d10000] text-white '>
       <Navbar />
       <Page1Content users={props.users} />
     </div>
