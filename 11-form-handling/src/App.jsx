@@ -11,7 +11,7 @@ const App = () => {
     <div>
       <form onSubmit={(e)=>{
         submitHandler(e);
-      }
+      } 
       }>
         <input type ="text" placeholder='enter your name' />
         <button>Submit</button>
