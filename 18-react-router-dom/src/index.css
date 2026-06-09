@@ -1,0 +1,166 @@
+/* =========================
+   RESET / NORMALIZE
+   ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  color: #333;
+}
+
+/* =========================
+   ROOT VARIABLES
+   ========================= */
+:root {
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --accent: #28a745;
+  --danger: #dc3545;
+
+  --bg: #ffffff;
+  --text: #333333;
+
+  --radius: 6px;
+  --transition: 0.3s ease;
+}
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: var(--transition);
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+   LAYOUT
+   ========================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+/* =========================
+   FLEX & GRID HELPERS
+   ========================= */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   IMAGES
+   ========================= */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================
+   FORMS
+   ========================= */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  outline: none;
+}
+
+/* =========================
+   UTILITIES
+   ========================= */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 1rem; }
+
+.hidden {
+  display: none;
+}
+
+
+.navbar {
+  padding: 1rem;
+  justify-content: space-between;
+  display: flex;
+  background-color: blue;
+}
+
+.navbar a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: underline;
+}
+
+.home, .about, .contact {
+  padding: 2rem;
+  text-align: center;
+  font-size: 5rem;
+}
